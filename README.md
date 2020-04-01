@@ -1,6 +1,11 @@
 # ohw20s
 open source hardware and maker course for sjtu 2020 spring
 
+#20200401作业
+1.dataqust 或者learnpythonthehardway 学习完成5个小单元。dataquest进度上传，或者手敲的learnpythonthehardway代码上传github你的目录
+2.利用mc.setBlock(x,y,z,1)中玩家脚下造10块砖头
+
+
 # Markdown 基本语法
 ![markdown cheat sheet](https://github.com/shiep18/EIS2020/blob/master/markdowncheatsheet.JPG)
 

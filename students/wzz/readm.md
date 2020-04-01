@@ -6,5 +6,8 @@ welcome
 1.mixed list  
   -what is this?  
  ---
- ~~cross the line~~
+ ~~cross the line~~   
  |first header|second header|
+ |--------------|---------------|
+ |content cell1|content cell2|
+ |content column 1|content column 2|

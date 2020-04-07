@@ -1,4 +1,4 @@
-exe1
+ex1
 print("Hello World!")
 print("Hello Again")
 print("I like typing this.")

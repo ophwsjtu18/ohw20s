@@ -1,0 +1,84 @@
+>>> print("Hello World!")
+Hello World!
+>>> print("Hello Again")
+Hello Again
+>>> print("I like typing this.")
+I like typing this.
+>>> print('Yay!Pring.')
+Yay!Pring.
+>>> print("I'd much rather you 'not'.")
+I'd much rather you 'not'.
+>>> print ('I “said" do not touch this.')
+I “said" do not touch this.
+>>> print("This will run.")
+This will run.
+>>> print("Hens", 25 + 30 / 6)
+Hens 30.0
+>>> print("Roosters", 100 - 25 * 3 % 4)
+Roosters 97
+>>> print(3 + 2 + 1 - 5 + 4 % 2 - 1 / 4 + 6)
+6.75
+>>> print(3 + 2 < 5 - 7)
+False
+>>> cars = 100
+>>> print("There are",cars,"cars available.")
+	  
+There are 100 cars available.
+>>> my_name='Yuan yuan'
+>>> my_age=20
+>>> my_height=168
+>>> my_weight=60
+	  
+>>> my_eyes='Black'
+>>> print(f"Let's talo about {my_name}.")
+	  
+Let's talo about Yuan yuan.
+>>> print (f"She's {my_height} inches tall.")
+	  
+She's 168 inches tall.
+>>> total=my_age+my_height+my_weight
+>>> print(f"If I add {my_age}, {my_height}, and {my_weight} I get {total}.")
+	  
+If I add 20, 168, and 60 I get 248.
+>>> binary = "binary"
+	  
+>>> do_not = "don't"
+	  
+>>> y = f"Those who know {binary} and those who {do_not}."
+	  
+>>> print(y)
+	  
+Those who know binary and those who don't.
+>>> print(f"I also said: '{y}'")
+
+I also said: 'Those who know binary and those who don't.'
+>>> w = "This is the left side of..."
+	  
+>>> e = "a string with a right side."
+	  
+>>> print(w + e)
+	  
+This is the left side of...a string with a right side.
+>>> formatter = "{} {} {} {}"
+	  
+>>> print(formatter.format(1, 2, 3, 4))
+	  
+1 2 3 4
+>>> print(formatter.format("one", "two", "three", "four"))
+	  
+one two three four
+>>> print(formatter.format(True, False, False, True))
+	  
+True False False True
+>>> print(formatter.format(formatter, formatter, formatter, formatter))
+	  
+{} {} {} {} {} {} {} {} {} {} {} {} {} {} {} {}
+>>> print(formatter.format(
+    "Try your",
+    "Own text here",
+    "Maybe a poem",
+    "Or a song about fear"
+))
+	  
+Try your Own text here Maybe a poem Or a song about fear
+

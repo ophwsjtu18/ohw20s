@@ -1,0 +1,2 @@
+# The words after the # will be ignored by python
+print("The words in the print function will run")

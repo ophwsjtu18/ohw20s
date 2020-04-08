@@ -1,0 +1,24 @@
+from mcpi.minecraft import Minecraft
+import time
+
+mc=Minecraft.create()
+#mc=Minecraft.create("10.163.80.195",4711)
+
+stayed_time=0
+
+while True:
+    print("stay_time"+str(stayed_time))
+    time.sleep(0.5)
+    pos=mc.player.getTilePos()
+    mc.postToChat("please goto home x=-32 y=20 z=-44 for 15s to fly")
+    mc.postToChat("x:"+str(pos.x)+"y:"+str(pos.y)+"z:"+str(pos.z)) 
+    if pos.x==-32 and pos.y==20 and pos.z==-44:
+        mc.postToChat("welcome home")
+        stayed_time=stayed_time+1
+        yy=[1,2,3,4,5,6,7,8,9,10]
+        for ydata in yy:
+            mc.setBlock(-32,10-ydata,-44,1)
+                  
+    else:
+        stayed_time=0
+        

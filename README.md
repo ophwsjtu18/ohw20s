@@ -6,6 +6,11 @@ open source hardware and maker course for sjtu 2020 spring
 1.dataqust 或者learnpythonthehardway 学习完成5个小单元。dataquest进度上传，或者手敲的learnpythonthehardway代码上传github你的目录  
 2.利用mc.setBlock(x,y,z,1)中玩家脚下造10块砖头  
 
+# 20200408作业
+
+1.参照ppt写一个house(x,y,z,l,w,h)函数，建造有四壁，有窗有屋顶有地板的房子。利用setBlock   
+2.跑通我的世界1.12版本  
+3.回到建好的房子里点亮led灯，走出房子熄灭led灯  
 
 # Markdown 基本语法
 ![markdown cheat sheet](https://github.com/shiep18/EIS2020/blob/master/markdowncheatsheet.JPG)

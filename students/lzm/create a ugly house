@@ -1,0 +1,30 @@
+import mcpi.minecraft as minecraft
+import mcpi.block as block
+mc=minecraft.Minecraft.create()
+pos=mc.player.getTilePos()
+x0=pos.x
+y0=pos.y
+z0=pos.z
+k=4
+for x in range(10):
+    for z  in range(10):
+        mc.setBlock(x0+x, y0, z0+z, k)
+
+for y in range(10):
+    for a in range(10):
+        mc.setBlock(x0+a, y0+y, z0, k)
+        mc.setBlock(x0+a, y0+y, z0+9, k)
+    for a in range(8):
+        mc.setBlock(x0, y0+y, z0+1+a, k)
+        mc.setBlock(x0+9, y0+y, z0+1+a, k)
+for x in range(10):
+    for z  in range(10):
+        mc.setBlock(x0+x, y0+9, z0+z, k)
+
+      
+mc.setBlock(x0+5,y0+1,z0,0)
+mc.setBlock(x0+5, y0+2, z0,0)
+
+for z in range(2):
+      for y in range(2): 
+            mc.setBlock(x0+10, y0+y+2, z0+z+4, 20)

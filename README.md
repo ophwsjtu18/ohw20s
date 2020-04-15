@@ -12,6 +12,12 @@ open source hardware and maker course for sjtu 2020 spring
 2.跑通我的世界1.12版本  
 3.回到建好的房子里点亮led灯，走出房子熄灭led灯  
 
+# 20200415作业
+1.用socket接口编程在我的世界玩家脚下摆3x3的黄金块
+2.mcpi协议参考https://github.com/brooksc/mcpipy/blob/master/mcpi/mcpi_protocol_spec.txt
+3.学习python 类class的用法
+
+
 # Markdown 基本语法
 ![markdown cheat sheet](https://github.com/shiep18/EIS2020/blob/master/markdowncheatsheet.JPG)
 

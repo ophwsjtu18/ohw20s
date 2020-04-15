@@ -6,11 +6,11 @@ print("player pos is",pos)
 def House(x0,y0,z0,L,W,H):
     for y in range(H):
         for x in range(L):
-            mc.setBlock(x0+x,y0,z0,4)
-            mc.setBlock(x0+x,y0,z0+W-1,4)
+            mc.setBlock(x0+x,y,z0,4)
+            mc.setBlock(x0+x,y,z0+W-1,4)
         for x in range(W-2):
-            mc.setBlock(x0,y0,z0+1+x,4)
-            mc.setBlock(x0+L-1,y0,z0+1+x,4)
+            mc.setBlock(x0,y,z0+1+x,4)
+            mc.setBlock(x0+L-1,y,z0+1+x,4)
     for x in range(L):
         for z in range(W):
             mc.setBlock(x0+x,y0,z0+z,4)

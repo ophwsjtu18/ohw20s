@@ -1,0 +1,25 @@
+from mcpi.minecraft import Minecraft
+import serial
+import serial.tools.list_ports
+import time
+ser=serial.Serial(port='COM1')
+time.sleep(2)
+
+mc=Minecraft.create()
+stayed_time=0
+while True:
+    print("stay_time"+str(stayed_time))
+    time.sleep(0.5)
+    pos=mc.player.getTilePos()
+    mc.postToChat("please goto home -184=<x<=-177 y=-31 -93<=z<=-86")
+    mc.postToChat("x:"+str(pos.x)+"y:"+str(pos.y)+"z:"+str(pos.z)) 
+    
+    if pos.x>=-183 and pos.y==31 and pos.x<=-177 and pos.z>=-93 and pos.z<=-86:
+        mc.postToChat("welcome home")
+        stayed_time=stayed_time+1
+        #回到家给串口送一个y，arduino收到串口点亮一盏led
+        ser.write("y".encode())
+        print("y send")
+    else:
+        stayed_time=0
+        ser.write("f".encode())

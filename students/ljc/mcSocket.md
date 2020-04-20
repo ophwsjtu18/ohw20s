@@ -1,0 +1,38 @@
+#The server code:
+import socket
+from mcpi.minecraft import Minecraft
+import mcpi.block as block
+
+s=socket.socket()
+s.bind(("127.0.0.1",25566))
+s.listen(5)
+mc=Minecraft.create()
+
+c,addr=s.accept()
+print(f"adress {addr} connected")
+
+while True:
+    msg=c.recv(1024)
+    pos=mc.player.getTilePos()
+    n=eval(msg)
+    for i in range(n):
+        for j in range(n):
+            mc.setBlock(pos.x+i,pos.y-1,pos.z+j,41)
+    print(f"{n}*{n} plane created")
+
+
+
+#-----------------------------------------------------------------
+#The receiver code:
+import socket
+
+s=socket.socket()
+
+s.connect(("127.0.0.1",25566))
+
+print("connected")
+
+while True:
+    msg=input("input a number to create an n*n plane>>")
+    s.send(msg.encode("ascii"))
+    

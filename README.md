@@ -17,6 +17,10 @@ open source hardware and maker course for sjtu 2020 spring
 2.mcpi协议参考https://github.com/brooksc/mcpipy/blob/master/mcpi/mcpi_protocol_spec.txt  
 3.学习python 类class的用法  
 
+# 20200422作业
+1. 用web接口指挥我的世界人物前后左右后退
+2. 通过网页在我的世界里建房子
+3. 
 
 # Markdown 基本语法
 ![markdown cheat sheet](https://github.com/shiep18/EIS2020/blob/master/markdowncheatsheet.JPG)

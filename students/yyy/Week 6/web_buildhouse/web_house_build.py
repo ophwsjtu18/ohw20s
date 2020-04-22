@@ -22,7 +22,6 @@ def House(x0,y0,z0,L,W,H):
     mc.setBlock(x0+L/2,y0+1,z0,0)
     mc.setBlock(x0+L/2,y0+2,z0,0)
     mc.setBlock(x0+L/2,y0+3,z0,0)
-
 pos=mc.player.getTilePos()
 if os.path.isfile("house_build.txt"):
    f=open("house_build.txt")

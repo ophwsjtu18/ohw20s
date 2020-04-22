@@ -13,7 +13,7 @@ print("<meta charset=\"utf-8\">")
 print("<title>moocxing</title>")
 print("</head>")
 print("<body>")
-print("<h2>%s:%s</b2>" % (mc_move,mc_dir))
+print("<h2>%s:%s</h2>" % (mc_move,mc_dir))
 print("</body>")
 print("</html>")
 with open('../htdocs/'+mc_move+".txt",'w') as f:

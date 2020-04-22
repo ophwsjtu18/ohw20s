@@ -20,7 +20,11 @@ open source hardware and maker course for sjtu 2020 spring
 # 20200422作业
 1. 用web接口指挥我的世界人物前后左右后退停止
 2. 通web接口在我的世界里建一栋房子
-3. 
+3. 在A4纸大小厚2毫米的板子上设计一个arduino盒子，要求  
+* 6个面，露出排针可供扩展
+* 露出USB口可插USB线
+* 一个竖杆插在arduino座上
+* 竖杆上留3个LED灯的位置作为红绿灯
 
 # Markdown 基本语法
 ![markdown cheat sheet](https://github.com/shiep18/EIS2020/blob/master/markdowncheatsheet.JPG)

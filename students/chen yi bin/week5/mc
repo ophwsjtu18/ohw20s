@@ -1,1 +1,10 @@
-
+###put stones on the ground
+from mcpi.minecraft import Minecraft
+import time
+mc=Minecraft.create()
+pos=mc.player.getTilePos()
+from mcpi import block
+x = pos.x
+y = pos.y
+z = pos.z
+mc.setBlocks(x + 1, y, z, x +2, y + 20, z +5, block.STONE.id )

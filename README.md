@@ -18,8 +18,8 @@ open source hardware and maker course for sjtu 2020 spring
 3.学习python 类class的用法  
 
 # 20200422作业
-1. 用web接口指挥我的世界人物前后左右后退
-2. 通过网页在我的世界里建房子
+1. 用web接口指挥我的世界人物前后左右后退停止
+2. 通web接口在我的世界里建一栋房子
 3. 
 
 # Markdown 基本语法

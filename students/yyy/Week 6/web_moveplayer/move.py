@@ -2,7 +2,6 @@ import os
 import time
 from mcpi.minecraft import Minecraft
 mc=Minecraft.create()
-mc.player.setTilePos(-32,9,-45)
 while True:
     pos=mc.player.getTilePos()
     if os.path.isfile("move.txt"):
@@ -23,3 +22,5 @@ while True:
           time.sleep(2)
        elif a=='q':
           break;
+
+

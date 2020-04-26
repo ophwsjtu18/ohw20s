@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Player Control Panel</title>
+</head>
+<body>
+<form action="/cgi-bin/mc_execute.py" method="post" target="iFrame_tmp">
+Main Command: <input type="text" name="mc_cmd"> <br/>
+Parameters (Optional): <input type="text" name="mc_prm"> <br/>
+<input type="submit" value="Submit">
+</form>
+Main Command contains "move" and "house". </br>
+"move" needs at least one paramter, which indicates the direction. </br>
+"u" means up, "e" means east, and so on. </br>
+The second parameter is optional, if specified, you can determine how much distance you wanna move. 1 is the default value. </br>
+So, you can type in parameters like: "u 10", which means you'll be TPed 10 meters(blocks) above your original position.
+</body>
+<iframe name="iFrame_tmp" style="HEIGHT: 0px; WIDTH: 0px;"></iframe>
+</html>

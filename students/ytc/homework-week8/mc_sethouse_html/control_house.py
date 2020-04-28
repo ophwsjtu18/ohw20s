@@ -1,10 +1,15 @@
 import os
 import time 
 from mcpi.minecraft import Minecraft
+import mcpi.minecraft as minecraft
+from _ast import For
+from mcpi import block
+mc = minecraft.Minecraft.create()
+pos = mc.player.getTilePos()
+mc.postToChat("x="+str(pos.x)+" y"+str(pos.y)+" z="+str(pos.z))
+print("player pos is",pos)
 
-mc=Minecraft.create()
 
-print(1)
 def makeHouse(x, y, z, wideX, wideZ, height, door = 0, roof = 0):
 
     for a in range(wideX):
@@ -34,6 +39,9 @@ def makeHouse(x, y, z, wideX, wideZ, height, door = 0, roof = 0):
         for y in range(2): 
             mc.setBlock(x, y+y+roof, z+z+4, 20)
 pass
+
+
+makeHouse(189,68,-214,10,8,10,5,2)
 
 while True:
     time.sleep(1)

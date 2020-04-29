@@ -9,8 +9,8 @@ cord  = cord2[0].split(',')
 x=float(cord[0])
 y= float(cord[1])
 z= float(cord[2])
-for ii in range(4):
-  for jj in range(4):
+for ii in range(3):
+  for jj in range(3):
     tout = 'world.setBlock('
     tout += str(x - 1 + i)
     tout += ','

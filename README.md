@@ -26,6 +26,13 @@ open source hardware and maker course for sjtu 2020 spring
 * 一个竖杆插在arduino座上
 * 竖杆上留3个LED灯的位置作为红绿灯
 
+# 20200429作业
+1. arduino盒子转化为svg格式
+2. 导入svg格式，拉伸成立体
+3. 拼成完整立体
+4. 导出为box.stl
+5. 树莓派上打开我的世界，跑通welcomehome.py
+
 # Markdown 基本语法
 ![markdown cheat sheet](https://github.com/shiep18/EIS2020/blob/master/markdowncheatsheet.JPG)
 

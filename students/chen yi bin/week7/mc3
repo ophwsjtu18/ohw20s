@@ -17,5 +17,5 @@ for ii in range(4):
     tout += str(y - 2)
     tout += ','
     tout += str(z - 1 + j)
-    tout += ',35:8)\n'
+    tout += ',41)\n'
     s.send(tout.encode('ascii'))

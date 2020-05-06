@@ -33,6 +33,10 @@ open source hardware and maker course for sjtu 2020 spring
 4. 导出为box.stl
 5. 树莓派上打开我的世界，跑通welcomehome.py
 
+# 20200506作业
+1. 网上搜索资料，安装openvino并测试
+2. 将box.stl用binvox导入我的世界
+
 # Markdown 基本语法
 ![markdown cheat sheet](https://github.com/shiep18/EIS2020/blob/master/markdowncheatsheet.JPG)
 

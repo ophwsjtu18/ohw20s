@@ -37,6 +37,15 @@ open source hardware and maker course for sjtu 2020 spring
 1. 网上搜索资料，安装openvino并测试
 2. 将box.stl用binvox导入我的世界
 
+# 20200506作业
+1. 网上搜索资料，安装openvino并测试
+2. 将box.stl用binvox导入我的世界
+
+# 20200513作业
+1. 组长协调组员完成3D打印和激光切割。材料汇总到董老师处。
+2. 利用VTK，完成投石车的车身STL虚拟组装。
+
+
 # Markdown 基本语法
 ![markdown cheat sheet](https://github.com/shiep18/EIS2020/blob/master/markdowncheatsheet.JPG)
 

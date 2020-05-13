@@ -1,0 +1,64 @@
+import vtk
+
+import time
+
+cone = vtk.vtkConeSource ()
+
+cone.SetHeight( 50.0 )
+
+cone.SetRadius( 10.0 )
+
+cone.SetResolution( 10 )
+
+
+#RTLreader
+property = vtk.vtkProperty()
+
+property.SetColor(0, 1, 0)
+
+property.SetDiffuse(0.7)
+
+property.SetSpecular(0.4)
+
+property.SetSpecularPower(20)
+
+
+
+
+ren1 = vtk.vtkRenderer()
+reader=[]
+rtlMapper=[]
+coneActor2=[]
+strings=["arm.stl","arm_motor_base.stl","arming_arm.stl","base.stl","base_motor_mount.stl","controller_bottom.stl","controller_top.stl","plate.stl","tray.stl","tray_gate.stl"]
+for i in range(0,9):
+    
+    reader.append(vtk.vtkSTLReader())
+    reader[i].SetFileName(strings[i])
+
+    rtlMapper.append(vtk.vtkPolyDataMapper())
+
+    rtlMapper[i].SetInputConnection(reader[i].GetOutputPort())
+
+
+    coneActor2.append(vtk.vtkActor())
+
+    coneActor2[i].SetMapper(rtlMapper[i])
+
+    coneActor2[i].SetProperty(property)
+    ren1.AddActor(coneActor2[i])
+    ren1.SetBackground(0.1, 0.2, 0.4)
+renWin = vtk.vtkRenderWindow()
+renWin.AddRenderer(ren1)
+renWin.SetSize(600, 600)
+
+for i in range(0,360):
+    time.sleep(0.1)
+    renWin.Render()
+    ren1.GetActiveCamera().Azimuth(1)
+
+    
+
+    
+    
+
+

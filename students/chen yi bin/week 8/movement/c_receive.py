@@ -15,5 +15,5 @@ print("<body>")
 print("<h2>%s:%s</h2>"%(move,place))
 print("</body>")
 print("</html>")
-with open('../fold/'+ move +'.txt','v') as text:
+with open('../htdocs/'+ move +'.txt','v') as text:
     text.write(f'{place}')

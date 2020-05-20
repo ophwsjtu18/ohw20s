@@ -45,6 +45,11 @@ open source hardware and maker course for sjtu 2020 spring
 1. 组长协调组员完成3D打印和激光切割。材料汇总到董老师处。
 2. 利用VTK，完成投石车的车身STL虚拟组装。
 
+# 20200520作业
+1. 利用123D导入coredraw的激光切割底座svg文件
+2. 摆放底座3D模型
+3. 导出底座模型STL
+4. 利用串口控制arm-stl绕轴给定角度转动。
 
 # Markdown 基本语法
 ![markdown cheat sheet](https://github.com/shiep18/EIS2020/blob/master/markdowncheatsheet.JPG)

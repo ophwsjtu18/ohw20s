@@ -1,9 +1,9 @@
 import cgi, cgitb
 form = cgi.FieldStorage()
 house = form.getvalue("house")
-housex = form.getvalue("x")
-housey = form.getvalue("y")
-housez = form.getvalue("z")
+x = form.getvalue("x")
+y = form.getvalue("y")
+z = form.getvalue("z")
 
 
 

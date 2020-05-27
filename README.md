@@ -51,6 +51,10 @@ open source hardware and maker course for sjtu 2020 spring
 3. 导出底座模型STL
 4. 利用串口控制arm-stl绕轴给定角度转动。
 
+# 20200525作业
+1.投石机用定时器完成投掷动画。 
+2.利用assemble组成组件
+
 # Markdown 基本语法
 ![markdown cheat sheet](https://github.com/shiep18/EIS2020/blob/master/markdowncheatsheet.JPG)
 

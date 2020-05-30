@@ -1,6 +1,5 @@
 import vtk
 import serial
-
 class mytimercallback():
    def __init__(self):
        self.actors=[]

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>moocxing</title>
+
+</head>
+
+<body>
+
+<form action="/cgi-bin/py.py" method="post">
+
+我的世界移动move or buildhouse: <input type="text" name="mc_move"> <br />
+
+
+
+参数（wasdz，buildhouse:y）: <input type="text" name="mc_dir" />
+
+<input type="submit" value="提交" />
+
+</form>
+
+</body>
+
+</html>

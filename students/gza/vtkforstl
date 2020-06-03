@@ -1,0 +1,81 @@
+import vtk
+
+import time
+
+
+
+#STLreader
+
+reader=[]
+
+stlMapper=[]
+
+actor=[]
+
+stl=["arm.stl","arm_motor_base.stl","arming_arm.stl","base.stl","base_motor_mount.stl","controller_bottom.stl","controller_top.stl","plate.stl","tray.stl","tray_gate.stl"]
+
+ren = vtk.vtkRenderer()
+
+property = vtk.vtkProperty()
+
+property.SetColor(1, 1, 0)
+
+property.SetDiffuse(1)
+
+property.SetSpecular(0.4)
+
+property.SetSpecularPower(20)
+
+
+
+for i in range(0,10):
+
+
+
+    reader.append(vtk.vtkSTLReader())
+
+    reader[i].SetFileName(stl[i])
+
+    stlMapper.append(vtk.vtkPolyDataMapper())
+
+    stlMapper[i].SetInputConnection(reader[i].GetOutputPort())
+
+    actor.append(vtk.vtkActor())
+
+    actor[i].SetMapper(stlMapper[i])
+
+    actor[i].SetProperty(property)
+
+    
+
+actor[3].SetPosition(15,35,20)
+
+actor[2].SetPosition(20,0,-10)
+
+actor[3].RotateZ(90)
+
+actor[5].SetPosition(0,0,-90)
+
+actor[6].SetPosition(0,0,-90)
+
+for i in range(0,10):
+
+    ren.AddActor(actor[i])
+
+ren.SetBackground(0.3, 0.3, 0.7)
+
+
+
+renWin = vtk.vtkRenderWindow()
+
+renWin.AddRenderer(ren)
+
+renWin.SetSize(600, 600)
+
+renWin.Render()
+
+interactor = vtk.vtkRenderWindowInteractor()
+
+interactor.SetRenderWindow(renWin)
+
+interactor.Start()

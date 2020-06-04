@@ -1,0 +1,22 @@
+
+import socket
+s = socket.socket()
+s.connect(('127.0.0.1', 4711))
+s.send('player.getPos()\n'.encode('ascii'))
+pos= str(s.recv(1024))
+print(pos)
+cord0 = pos.split('\'')
+cord1 = cord0[1].split('\\n')
+cord  = cord1[0].split(',')
+x0,y0,z0 = cord[0],cord[1],cord[2]
+for i in range(3):
+  for j in range(3):
+    msg = 'world.setBlock('
+    msg += str(float(x0)+i)
+    msg += ','
+    msg += str(float(y0))
+    msg += ','
+    msg += str(float(z0)+j)
+    msg += ',41)\n'
+    s.send(msg.encode('ascii'))
+s.close(
